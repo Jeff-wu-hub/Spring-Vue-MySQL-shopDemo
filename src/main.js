@@ -3,8 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import axios from 'axios'
+axios.defaults.baseURl = '/api'
 Vue.prototype.$http = axios
-axios.default.baseUrl = 'api'
 Vue.config.productionTip = false
 
 new Vue({

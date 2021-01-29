@@ -56,7 +56,7 @@ module.exports = {
 
     // 配置 webpack-dev-server 行为。
     devServer: {
-        open: process.platform === 'darwin',
+        open: false,
         host: '0.0.0.0',
         port: 8080,
         https: false,
@@ -64,30 +64,13 @@ module.exports = {
         // 查阅 https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli/cli-service.md#配置代理
         proxy: {
             '/api': {
-                target: "192.168.0.115:8080",
+                target: "http://192.168.0.118:8888/",
                 changeOrigin: true,
                 secure: false,
                 pathRewrite: {
                     "^/api": ""
                 }
             },
-            '/foo': {
-                target: '<other_url>'
-            }
         }, // string | Object
-        before: app => {}
-    },
-
-    // PWA 插件的选项。
-    // 查阅 https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli-plugin-pwa/README.md
-    pwa: {},
-
-    // 三方插件的选项
-    pluginOptions: {
-        // ...
-    },
-
-    css: {
-      modules: true
     }
 }

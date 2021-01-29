@@ -1,6 +1,5 @@
 <template>
 <div id="app">
-  <button @click="test">按钮</button>
 </div>
 </template>
 
@@ -12,11 +11,7 @@ export default {
 
     }
   },
-  methods:{
-    async test(){
-      const { data } = this.$http.get('/hello')
-      alert(data)
-    }
+  mounted() {
   }
 }
 </script>

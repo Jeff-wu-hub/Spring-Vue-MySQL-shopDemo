@@ -14,7 +14,6 @@ import store from './store'
 import router from './router'
 
 import '@/icons' // icon
-import '@/permission' // permission control
 
 // set ElementUI lang to EN
 Vue.use(ElementUI, { locale })

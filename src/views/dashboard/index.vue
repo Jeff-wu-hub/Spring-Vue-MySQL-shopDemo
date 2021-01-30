@@ -4,12 +4,12 @@
 </template>
 
 <script>
-
+import { login } from '@/api/user'
 export default {
   name: 'Dashboard',
-  methods:{
-
-  }
+mounted() {
+  login({user:'admin',password:'123456'})
+}
 
 }
 </script>

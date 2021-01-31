@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6897e1e-0d3f-41d9-a91d-214e8fb54de5" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1n3byil7ZTcE7UZXe9H5MWW1wuf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.28850573" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Java缓存\src\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ShopApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Java缓存" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vueshop.shop_api.ShopApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6897e1e-0d3f-41d9-a91d-214e8fb54de5" name="默认的" comment="" />
+      <created>1610621977920</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610621977920</updated>
+      <workItem from="1610621988676" duration="3646000" />
+      <workItem from="1610890794745" duration="385000" />
+      <workItem from="1610891478817" duration="679000" />
+      <workItem from="1611059599175" duration="2390000" />
+      <workItem from="1611062018957" duration="857000" />
+      <workItem from="1611063016453" duration="12000" />
+      <workItem from="1611063039784" duration="147000" />
+      <workItem from="1611063200726" duration="4564000" />
+      <workItem from="1611071530102" duration="9789000" />
+      <workItem from="1611935737232" duration="33000" />
+      <workItem from="1611935824477" duration="1185000" />
+      <workItem from="1612022552063" duration="685000" />
+    </task>
+    <task id="LOCAL-00001" summary="上传依赖">
+      <created>1611060441104</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611060441104</updated>
+    </task>
+    <task id="LOCAL-00002" summary="111">
+      <created>1611936418683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611936418684</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <created>1612022620273</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612022620273</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="上传依赖" />
+    <MESSAGE value="111" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="491" y="188" width="1359" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610627558107">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="491" y="188" width="1359" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1610627558107" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610622088059">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1610622088059" />
+    <state x="2360" y="99" key="#项目结构" timestamp="1611158865965">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2360" y="99" key="#项目结构/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611158865965" />
+    <state width="1877" height="230" key="GridCell.Tab.0.bottom" timestamp="1611160335855">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="230" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611160335855" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1610630680271" />
+    <state width="1877" height="230" key="GridCell.Tab.0.center" timestamp="1611160335855">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="230" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611160335855" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1610630680271" />
+    <state width="1877" height="230" key="GridCell.Tab.0.left" timestamp="1611160335855">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="230" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611160335855" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1610630680271" />
+    <state width="1877" height="230" key="GridCell.Tab.0.right" timestamp="1611160335855">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="230" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611160335855" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1610630680271" />
+    <state width="1877" height="230" key="GridCell.Tab.1.bottom" timestamp="1611160335855">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="230" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611160335855" />
+    <state width="1877" height="285" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1610630680271" />
+    <state width="1877" height="230" key="GridCell.Tab.1.center" timestamp="1611160335855">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="230" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611160335855" />
+    <state width="1877" height="285" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1610630680271" />
+    <state width="1877" height="230" key="GridCell.Tab.1.left" timestamp="1611160335855">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="230" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611160335855" />
+    <state width="1877" height="285" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1610630680271" />
+    <state width="1877" height="230" key="GridCell.Tab.1.right" timestamp="1611160335855">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="230" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611160335855" />
+    <state width="1877" height="285" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1610630680271" />
+    <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1611072175291">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611072175291" />
+    <state width="1877" height="352" key="GridCell.Tab.2.center" timestamp="1611072175291">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611072175291" />
+    <state width="1877" height="352" key="GridCell.Tab.2.left" timestamp="1611072175291">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611072175291" />
+    <state width="1877" height="352" key="GridCell.Tab.2.right" timestamp="1611072175291">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611072175291" />
+    <state x="2220" y="154" key="Maven.ArtifactSearchDialog" timestamp="1611075305237">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2220" y="154" key="Maven.ArtifactSearchDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611075305237" />
+    <state x="2259" y="136" width="1217" height="636" key="Registry" timestamp="1611072169144">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2259" y="136" width="1217" height="636" key="Registry/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611072169144" />
+    <state x="2308" y="106" key="SettingsEditor" timestamp="1611072105158">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2308" y="106" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611072105158" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1612022621938">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612022621938" />
+    <state x="2472" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611060442574" />
+    <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1611068071621">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611068071621" />
+  </component>
+</project>

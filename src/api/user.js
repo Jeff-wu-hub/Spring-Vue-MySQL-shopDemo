@@ -4,6 +4,13 @@ export function login(data) {
   return request({
     url: '/login',
     method: 'post',
-    data
+    params:data
+  })
+}
+export function logout(data) {
+  return request({
+    url: '/login',
+    method: 'post',
+    params:data
   })
 }

@@ -45,13 +45,15 @@ router.beforeEach( (to,from,next)=>{
   NProgress.start()
   if(to.path === '/login'){
     next()
-    NProgress.done()
+    return NProgress.done()
   }else{
     if(!store.getters.userInfo.online){
       next({path:'/login'})
-      NProgress.done()
+      return NProgress.done()
     }
   }
+  NProgress.done()
+  next()
 })
 // Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {

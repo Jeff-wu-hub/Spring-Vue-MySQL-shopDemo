@@ -1,19 +1,20 @@
 import { login } from '@/api/user'
 const state = {
     name:'',
-    online:0,
-    photo:''
+    photo:'',
+    online:true
 }
 const mutations={
-    LOG_IN: (state,data) =>{
-        const res = login(data)
-        // state.name = res.data.name
-        // state.photo = res.data.photo
-        // state.online = res.data.online
-        console.log(data)
+    LOG_IN:async (state,data) =>{
+        const res =  await login(data)
+            if(res.code === 200){
+                state.name = res.data.name
+                state.photo = res.data.photo
+                state.online = true
+            }
     },
     LOG_OUT:(state,data)=>{
-        const res = logOut(data)
+        logOut(data)
     }
 }
 const actions = {

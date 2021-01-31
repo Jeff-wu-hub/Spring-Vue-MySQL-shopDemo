@@ -26,9 +26,8 @@ service.interceptors.response.use(
     return response.data
   },
   error => {
-    console.log('err' + error) // for debug
     Message({
-      message: error.message,
+      message: '😓出错了！',
       type: 'error',
       duration: 5 * 1000
     })

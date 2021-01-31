@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { Message } from 'element-ui'
-
 // create an axios instance
 const service = axios.create({
   baseURL: '/api', // url = base url + request url
@@ -11,6 +10,7 @@ const service = axios.create({
 // request interceptor
 service.interceptors.request.use(
   config => {
+
     return config
   },
   error => {

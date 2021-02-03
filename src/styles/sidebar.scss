@@ -82,9 +82,9 @@
 
     & .nest-menu .el-submenu>.el-submenu__title,
     & .el-submenu .el-menu-item {
+      padding-left: 80px!important;
       min-width: $sideBarWidth !important;
       background-color: $subMenuBg !important;
-
       &:hover {
         background-color: $subMenuHover !important;
       }
@@ -119,7 +119,6 @@
 
     .el-submenu {
       overflow: hidden;
-
       &>.el-submenu__title {
         padding: 0 !important;
 

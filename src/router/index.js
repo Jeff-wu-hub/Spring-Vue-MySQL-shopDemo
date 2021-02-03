@@ -27,7 +27,23 @@ export const constantRoutes = [
       path: 'dashboard',
       name: 'Dashboard',
       component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
+      meta: { title: '首页', icon: 'table' }
+    }]
+  },
+  {
+    path: '/userInfo',
+    component: Layout,
+    meta: { title: '用户管理', icon: 'user' },
+    children: [{
+      path: 'userInfo',
+      name: 'userInfo',
+      component: () => import('@/views/userInfo/userList/index'),
+      meta: { title: '用户管理'}
+    },{
+      path: 'levelConfig',
+      name: 'levelConfig',
+      component: () => import('@/views/userInfo/levelConfig/index'),
+      meta: { title: '等级管理'}
     }]
   },
 

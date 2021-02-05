@@ -20,27 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6897e1e-0d3f-41d9-a91d-214e8fb54de5" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/dao/GoodsRepositoy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/entity/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/entity/Goodsdetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/entity/Goodstype.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/UserList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java缓存.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java缓存.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/ShopApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/ShopApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +74,14 @@
       <recent name="F:\Java缓存\src\main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ShopApiApplication (1)">
+    <configuration name="ShopApiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Java缓存" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vueshop.ShopApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShopApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Java缓存" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vueshop.shop_api.ShopApiApplication" />
@@ -124,7 +112,7 @@
       <workItem from="1611935737232" duration="33000" />
       <workItem from="1611935824477" duration="1185000" />
       <workItem from="1612022552063" duration="685000" />
-      <workItem from="1612529949783" duration="398000" />
+      <workItem from="1612529949783" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="上传依赖">
       <created>1611060441104</created>
@@ -147,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612022620273</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="shangchuan">
+      <created>1612530371396</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612530371396</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +171,7 @@
     <MESSAGE value="1" />
     <MESSAGE value="shangchuan" />
     <option name="LAST_COMMIT_MESSAGE" value="shangchuan" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="491" y="188" width="1359" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610627558107">
@@ -251,6 +247,10 @@
     </state>
     <state x="300" y="154" key="Maven.ArtifactSearchDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612530215891" />
     <state x="2220" y="154" key="Maven.ArtifactSearchDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611075305237" />
+    <state x="844" y="391" width="352" height="267" key="MultipleFileMergeDialog" timestamp="1612530356954">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="844" y="391" width="352" height="267" key="MultipleFileMergeDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612530356954" />
     <state x="2259" y="136" width="1217" height="636" key="Registry" timestamp="1611072169144">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -260,10 +260,10 @@
     </state>
     <state x="388" y="106" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612529975058" />
     <state x="2308" y="106" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611072105158" />
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1612022621938">
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1612530373325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612022621938" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612530373325" />
     <state x="2472" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611060442574" />
     <state x="773" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612529953579">
       <screen x="0" y="0" width="1920" height="1050" />

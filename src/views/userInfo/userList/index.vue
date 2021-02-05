@@ -31,7 +31,7 @@ export default {
         pageSize:15,//每页显示数量
 
       },
-      serveData:[],//从服务器拉取的数据
+      serveData:[''],//从服务器拉取的数据
     }
   },
   methods:{

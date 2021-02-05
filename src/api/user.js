@@ -14,3 +14,10 @@ export function logout(data) {
     params:data
   })
 }
+export function createUser(data){
+  return request({
+    url:'',
+    method:'post',
+    params:data
+  })
+}

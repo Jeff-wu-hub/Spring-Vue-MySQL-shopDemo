@@ -31,9 +31,9 @@ export const constantRoutes = [
     }]
   },
   {
-    path: '/userInfo',
+    path: '/user',
     component: Layout,
-    meta: { title: '用户管理', icon: 'user' },
+    meta: { title: '会员管理', icon: 'user' },
     children: [{
       path: 'userInfo',
       name: 'userInfo',

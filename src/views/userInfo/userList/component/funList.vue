@@ -35,7 +35,7 @@
 
 <script>
 import { createUser } from '@/api/user'
-import NProgress from 'Nprogress'
+import NProgress from 'nprogress'
 export default {
 name: "funList",
   data(){

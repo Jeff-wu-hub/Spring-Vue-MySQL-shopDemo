@@ -8,5 +8,6 @@ import java.util.List;
 
 public interface UserRepositoy extends CrudRepository<User, List> {
     @Query(value = "select user_password from user where user_name = ?1",nativeQuery = true)
-    String  find(String username);
+    String find(String username);
+
 }

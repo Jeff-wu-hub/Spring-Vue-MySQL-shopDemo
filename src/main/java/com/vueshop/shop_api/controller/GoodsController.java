@@ -24,7 +24,7 @@ public class GoodsController {
     @PostMapping(value = "/postgoods")//,produces = "application/json")
     @ResponseBody
     public String postGoods(Goods goods){
-        goodsRepositoy.insertGoods(goods.getId(),goods.getGoods_name(),goods.getGoods_type(),goods.getGoods_detail(),goods.getGoods_photo(),goods.getGoods_brand(),goods.getGoods_create_time());
+        goodsRepositoy.save(goods);
         return "成功";
     }
 

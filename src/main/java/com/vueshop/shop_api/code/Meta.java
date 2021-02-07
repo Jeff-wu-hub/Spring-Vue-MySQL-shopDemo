@@ -3,24 +3,36 @@ package com.vueshop.shop_api.code;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
+
+
+//枚举错误信息类型
 @Component
-public enum Meta {
-    LOGIN_SUCCESS(0,"登录成功！"),
-    LOGIN_ERROR(1,"登陆失败！");
+public class Meta {
 
-     int code;
-     String msg;
+    HashMap<Integer, String> msg = new HashMap<>();//定义表示对应信息、
 
-      Meta(int code, String msg) {
-        this.code = code;
-        this.msg = msg;
+    public final static int SUCCESS = 200;
+    public final static int ERROR = 400;
+
+    /**
+     * 得到消息提示信息
+     * @param code
+     * @return
+     */
+    public String getMsg(Integer code){
+        if(msg.isEmpty()){
+            msgInit();
+        }
+        String result = msg.get(code);
+        return result;
     }
 
-    public int getCode() {
-        return code;
-    }
-
-    public String getMsg() {
-        return msg;
+    /**
+     * 初始化表示对应信息Map表
+     */
+    public void msgInit(){
+        msg.put(SUCCESS,"登录成功");
+        msg.put(ERROR,"登录成功");
     }
 }

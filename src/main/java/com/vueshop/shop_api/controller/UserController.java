@@ -1,33 +1,39 @@
 package com.vueshop.shop_api.controller;
 
-import com.vueshop.shop_api.code.Meta;
-import com.vueshop.shop_api.service.LoginService;
+import com.vueshop.shop_api.service.UserService;
+import com.vueshop.utils.Responses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
+import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
 @CrossOrigin//允许跨域
 public class UserController {
-    String username;
-    String password;
     @Autowired
-    LoginService loginService;
-    Meta meta;
+    UserService userService;
+    @Autowired
+     Responses responses;
+
+    /**
+     *
+     * @param request
+     * @param username
+     * @param password
+     * @return
+     */
     @PostMapping("/login")
     @ResponseBody
-    public Meta getOrder(@RequestParam Map<String, String> obj){
-        username = obj.get("username");
-        password = obj.get("password");
-        if(loginService.getLogin(username,password)){
-            System.out.println(meta);
-           return meta.LOGIN_SUCCESS;
-        }else{
-            return meta.LOGIN_ERROR;
+    public Responses getOrder(HttpServletRequest request,
+                              @RequestParam("username") String username,
+                              @RequestParam("password") String password) {
+        if(userService.getLogin(username, password)){
+             responses.init(request,null);
         }
+        System.out.println(responses);
+        return responses;
     }
 
 }

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -25,16 +27,23 @@ public class UserService {
     HashMap<String,Object> result = new HashMap<>(); //定义数据库查询数据
     HashMap<String,Object> metaData = new HashMap<>(); //定义meta状态
     public HashMap<String,Object> getLogin(String username, String password){
-        init(SERVICE,meta.getMsg(SERVICE));
-        if(username.equals("") || password.equals("")){
-            init(ERROR_PARAMS,meta.getMsg(ERROR_PARAMS));
+        init(SERVICE,meta.getMsg(SERVICE),0,null);
+        if(username.equals("") || password.equals("")){ //空参
+            init(ERROR_PARAMS,meta.getMsg(ERROR_PARAMS),0,null);
             return result;
         }
-        if(password.equals(userRepositoy.find(username))){
-            init(SUCCESS,meta.getMsg(SUCCESS));
+        if(password.equals(userRepositoy.find(username))){//比对数据
+            List<Object> data = new ArrayList<>();
+            data.add(userRepositoy.findAll(username));
+            init(SUCCESS,meta.getMsg(SUCCESS),data.size(),data);
+
             return result;
+        }else{
+            init(ERROR,meta.getMsg(ERROR),0,null);
+            return result;
+
         }
-        return result;
+
     }
 
     /**
@@ -42,11 +51,12 @@ public class UserService {
      * @param code
      * @param msg
      */
-    public void init(int code,String msg){
+    public void init(int code,String msg,int total,List<Object> data){
         metaData.put("code",code);
         metaData.put("msg",msg);
+        metaData.put("total",total);
+        result.put("data",data);
         result.put("meta",metaData);
-        result.put("data","");
     }
 
 }

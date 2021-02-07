@@ -19,8 +19,15 @@ public class Responses {
     int code;
     String msg;
     public HashMap<String,Object> init(HttpServletRequest request, HashMap<String, Object> result) {
-        HashMap<String,Object> map = new HashMap<>();
-        map.put("data",result);
-        return map;
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Responses{" +
+                "meta=" + meta +
+                ", code=" + code +
+                ", msg='" + msg + '\'' +
+                '}';
     }
 }

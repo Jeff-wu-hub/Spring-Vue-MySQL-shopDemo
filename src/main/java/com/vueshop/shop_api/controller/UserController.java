@@ -27,12 +27,11 @@ public class UserController {
      */
     @PostMapping("/login")
     @ResponseBody
-    public Responses getOrder(HttpServletRequest request,
+    public HashMap<String,Object> getOrder(HttpServletRequest request,
                               @RequestParam("username") String username,
                               @RequestParam("password") String password) {
         HashMap<String,Object> result = userService.getLogin(username,password);
-        responses.init(request,result);
-        return responses;
+        return responses.init(request,result);
     }
 
 }

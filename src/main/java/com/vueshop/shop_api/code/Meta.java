@@ -36,7 +36,7 @@ public class Meta {
      */
     public void msgInit(){
         msg.put(SUCCESS,"登录成功");
-        msg.put(ERROR,"登录成功");
+        msg.put(ERROR,"账号或密码错误");
         msg.put(ERROR_PARAMS,"传参错误");
         msg.put(SERVICE,"服务器异常");
     }

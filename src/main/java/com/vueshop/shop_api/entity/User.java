@@ -19,5 +19,7 @@ public class User {
     private String phone;
     private int level;
     private int money;
+    private String create_time;
+    private String name;
 
 }

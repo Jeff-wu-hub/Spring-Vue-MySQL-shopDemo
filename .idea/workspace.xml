@@ -22,28 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6897e1e-0d3f-41d9-a91d-214e8fb54de5" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/error/CommonReturnType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/error/PasswordMismatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/utils/Responses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="a6897e1e-0d3f-41d9-a91d-214e8fb54de5" name="默认的" comment="shangchuan">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java缓存.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java缓存.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/code/Meta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/code/Meta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/GoodsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/dao/GoodsRepositoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/dao/GoodsRepositoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/dao/UserRepositoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/dao/UserRepositoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/entity/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/entity/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vueshop/shop_api/ShopApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/utils/Responses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/utils/Responses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +50,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -95,7 +81,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xx1/yele_mes_api" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/yele_mes_api" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28850573" />
@@ -117,7 +103,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -158,6 +144,9 @@
       <workItem from="1612694519672" duration="38000" />
       <workItem from="1612694612088" duration="25000" />
       <workItem from="1612694653908" duration="91000" />
+      <workItem from="1612696818865" duration="123000" />
+      <workItem from="1612696968419" duration="234000" />
+      <workItem from="1612697246072" duration="1535000" />
     </task>
     <task id="LOCAL-00001" summary="上传依赖">
       <created>1611060441104</created>
@@ -198,7 +187,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -224,5 +213,47 @@
     <MESSAGE value="shangchuan" />
     <option name="LAST_COMMIT_MESSAGE" value="shangchuan" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1612697971279">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612697971279" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1612696438774">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438774" />
+    <state width="1137" height="348" key="GridCell.Tab.0.bottom" timestamp="1612696438844">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1137" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438844" />
+    <state width="1137" height="348" key="GridCell.Tab.0.center" timestamp="1612696438844">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1137" height="348" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438844" />
+    <state width="1137" height="348" key="GridCell.Tab.0.left" timestamp="1612696438844">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1137" height="348" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438844" />
+    <state width="1137" height="348" key="GridCell.Tab.0.right" timestamp="1612696438844">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1137" height="348" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438844" />
+    <state width="1137" height="348" key="GridCell.Tab.1.bottom" timestamp="1612696438845">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1137" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438845" />
+    <state width="1137" height="348" key="GridCell.Tab.1.center" timestamp="1612696438845">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1137" height="348" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438845" />
+    <state width="1137" height="348" key="GridCell.Tab.1.left" timestamp="1612696438845">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1137" height="348" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438845" />
+    <state width="1137" height="348" key="GridCell.Tab.1.right" timestamp="1612696438845">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1137" height="348" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612696438845" />
   </component>
 </project>

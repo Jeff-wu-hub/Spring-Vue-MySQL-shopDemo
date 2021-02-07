@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 
 
 @Controller
@@ -29,10 +30,8 @@ public class UserController {
     public Responses getOrder(HttpServletRequest request,
                               @RequestParam("username") String username,
                               @RequestParam("password") String password) {
-        if(userService.getLogin(username, password)){
-             responses.init(request,null);
-        }
-        System.out.println(responses);
+        HashMap<String,Object> result = userService.getLogin(username,password);
+        responses.init(request,result);
         return responses;
     }
 

@@ -19,13 +19,8 @@ public class Responses {
     int code;
     String msg;
     public HashMap<String,Object> init(HttpServletRequest request, HashMap<String, Object> result) {
-        this.code = meta.SUCCESS;
-        this.msg = meta.getMsg(200);
         HashMap<String,Object> map = new HashMap<>();
-        map.put("msg",msg);
-        map.put("code",code);
-        map.put("result",result);
-        System.out.println(map);
+        map.put("data",result);
         return map;
     }
 }

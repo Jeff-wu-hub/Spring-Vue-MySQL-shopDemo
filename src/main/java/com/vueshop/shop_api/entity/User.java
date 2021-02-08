@@ -14,10 +14,10 @@ public class User {
     private String user_name;
     private String user_password;
     private int online;
-    private String email;
+    private String email ;
     private String address;
     private String phone;
-    private int level;
+    private int user_level;
     private int money;
     private String create_time;
     private String name;

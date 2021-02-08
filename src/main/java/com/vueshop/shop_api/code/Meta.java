@@ -17,6 +17,7 @@ public class Meta {
     public final static int ERROR = 400;//登录失败
     public final static int ERROR_PARAMS = 401;//传参错误
     public final static int SERVICE = 500;//服务器异常
+    public final static int ERROR_ADD_USER = 301;//添加用户失败（用户名重复）
 
     /**
      * 得到消息提示信息
@@ -39,5 +40,6 @@ public class Meta {
         msg.put(ERROR,"账号或密码错误");
         msg.put(ERROR_PARAMS,"传参错误");
         msg.put(SERVICE,"服务器异常");
+        msg.put(ERROR_ADD_USER,"用户已存在");
     }
 }

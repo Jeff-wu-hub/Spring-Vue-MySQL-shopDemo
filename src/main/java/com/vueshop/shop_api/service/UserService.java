@@ -2,6 +2,7 @@ package com.vueshop.shop_api.service;
 
 import com.vueshop.shop_api.code.Meta;
 import com.vueshop.shop_api.dao.UserRepositoy;
+import com.vueshop.shop_api.entity.User;
 import com.vueshop.utils.Responses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -28,7 +29,7 @@ public class UserService {
     HashMap<String,Object> metaData = new HashMap<>(); //定义meta状态
     public HashMap<String,Object> getLogin(String username, String password){
         init(SERVICE,meta.getMsg(SERVICE),0,null);
-        if(username.equals("") || password.equals("")){ //空参
+        if(username == null || password == null){ //空参
             init(ERROR_PARAMS,meta.getMsg(ERROR_PARAMS),0,null);
             return result;
         }
@@ -45,6 +46,54 @@ public class UserService {
         }
 
     }
+
+    /**
+     *
+     * @param
+     * @return
+     */
+    public HashMap<String,Object> addUser(String username,String password,String email,String address,String phone,int money,String name){
+
+        User user1 = userRepositoy.findAll(username);
+        System.out.println(user1);
+        if(user1 == null){ //数据库为空
+            User user = new User();
+            user.setUser_name(username);
+            user.setUser_password(password);
+            user.setEmail(email);
+            user.setAddress(address);
+            user.setPhone(phone);
+            user.setMoney(money);
+            user.setName(name);
+            userRepositoy.save(user);
+            init(ERROR_PARAMS,meta.getMsg(ERROR_PARAMS),0,null);
+            return result;
+        }else {
+            //username重复，需要修改用户名
+            init(ERROR_ADD_USER,meta.getMsg(ERROR_ADD_USER),0,null);
+            return result;
+        }
+
+    }
+
+    /**
+     * 通过输入的用户名去查id
+     * @param username 传入的用户名
+     * @return
+     */
+    public HashMap<String,Object> delet(String username){
+        int id = userRepositoy.findID(username);
+        if(id!=0){ //空参
+            userRepositoy.deleteById(id);
+            init(ERROR_PARAMS,meta.getMsg(ERROR_PARAMS),0,null);
+            return result;
+        }else {
+            //username重复，需要修改用户名
+            init(ERROR_ADD_USER,meta.getMsg(ERROR_ADD_USER),0,null);
+            return result;
+        }
+    }
+
 
     /**
      * 放回数据

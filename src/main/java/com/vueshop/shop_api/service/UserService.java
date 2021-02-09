@@ -4,6 +4,7 @@ import com.vueshop.shop_api.code.Meta;
 import com.vueshop.shop_api.dao.UserRepositoy;
 import com.vueshop.shop_api.entity.User;
 import com.vueshop.utils.Responses;
+import org.apache.ibatis.jdbc.Null;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -25,22 +26,32 @@ public class UserService {
     Responses responses;
     @Autowired
     Meta meta;
-    HashMap<String,Object> result = new HashMap<>(); //定义数据库查询数据
-    HashMap<String,Object> metaData = new HashMap<>(); //定义meta状态
-    public HashMap<String,Object> getLogin(String username, String password){
-        init(SERVICE,meta.getMsg(SERVICE),0,null);
-        if(username == null || password == null){ //空参
-            init(ERROR_PARAMS,meta.getMsg(ERROR_PARAMS),0,null);
+    HashMap<String, Object> result = new HashMap<>(); //定义数据库查询数据
+    HashMap<String, Object> metaData = new HashMap<>(); //定义meta状态
+    User tempData;//数据库查询内容
+    User user = new User();
+
+    /**
+     * 登录功能
+     *
+     * @param username
+     * @param password
+     * @return
+     */
+    public HashMap<String, Object> login(String username, String password) {
+        init(SERVICE, 0, null);
+        if (username == null || password == null) { //空参
+            init(ERROR_PARAMS, 0, null);
             return result;
         }
-        if(password.equals(userRepositoy.find(username))){//比对数据
+        if (password.equals(userRepositoy.find(username))) {//比对数据
             List<Object> data = new ArrayList<>();
-            data.add(userRepositoy.findAll(username));
-            init(SUCCESS,meta.getMsg(SUCCESS),data.size(),data);
+            data.add(userRepositoy.selectByUserName(username));
+            init(SUCCESS, data.size(), data);
 
             return result;
-        }else{
-            init(ERROR,meta.getMsg(ERROR),0,null);
+        } else {
+            init(ERROR, 0, null);
             return result;
 
         }
@@ -48,16 +59,14 @@ public class UserService {
     }
 
     /**
+     * 增加用户
      *
      * @param
      * @return
      */
-    public HashMap<String,Object> addUser(String username,String password,String email,String address,String phone,int money,String name){
-
-        User user1 = userRepositoy.findAll(username);
-        System.out.println(user1);
-        if(user1 == null){ //数据库为空
-            User user = new User();
+    public HashMap<String, Object> addUser(String username, String password, String email, String address, String phone, int money, String name) {
+        tempData = userRepositoy.selectByUserName(username);
+        if (tempData == null) { //用户名不存在增加信息
             user.setUser_name(username);
             user.setUser_password(password);
             user.setEmail(email);
@@ -66,46 +75,82 @@ public class UserService {
             user.setMoney(money);
             user.setName(name);
             userRepositoy.save(user);
-            init(ERROR_PARAMS,meta.getMsg(ERROR_PARAMS),0,null);
-            return result;
-        }else {
+            init(SUCCESS_ADD_USER, 0, null);
+        } else {
             //username重复，需要修改用户名
-            init(ERROR_ADD_USER,meta.getMsg(ERROR_ADD_USER),0,null);
-            return result;
+            init(ERROR_ADD_USER, 0, null);
         }
+        return result;
 
     }
 
     /**
-     * 通过输入的用户名去查id
-     * @param username 传入的用户名
+     * 删除用户
+     * @param id
+     * @return result
+     */
+    public HashMap<String,Object> deleteUser(int id){
+        tempData = userRepositoy.selectById(id);
+        if (tempData ==null){
+            init(ERROR_DELETE_USER,0,null);
+            return result;
+        }else{
+            userRepositoy.deleteById(id);
+            init(SUCCESS_DELETE_USER,0,null);
+            return result;
+        }
+
+    }
+    /**
+     * 更新用户信息
+     * @param id
+     * @param username
+     * @param password
+     * @param email
+     * @param address
+     * @param phone
+     * @param money
+     * @param name
      * @return
      */
-    public HashMap<String,Object> delet(String username){
-        int id = userRepositoy.findID(username);
-        if(id!=0){ //空参
-            userRepositoy.deleteById(id);
-            init(ERROR_PARAMS,meta.getMsg(ERROR_PARAMS),0,null);
+    public HashMap<String, Object> updateUser(int id, String username, String password, String email, String address, String phone, int money, String name) {
+        tempData = userRepositoy.selectByUserName(username);
+        if (tempData == null) { //如果用户名不重复
+            user.setId(id);
+            user.setUser_name(username);
+            user.setUser_password(password);
+            user.setEmail(email);
+            user.setAddress(address);
+            user.setPhone(phone);
+            user.setMoney(money);
+            user.setName(name);
+            userRepositoy.save(user);
+            init(SUCCESS_UPDATE_USER, 0, null);
             return result;
-        }else {
-            //username重复，需要修改用户名
-            init(ERROR_ADD_USER,meta.getMsg(ERROR_ADD_USER),0,null);
+        }else{
+            init(ERROR_UPDATE_USER, 0, null);
             return result;
         }
     }
 
+//    public HashMap<String, Object> selectAll(String username, String password, String email, String address, String phone, int money, String name) {
+//        userRepositoy.findAll(username,password,email,address,phone,money,name);
+//        return metaData;
+//    }
 
     /**
-     * 放回数据
+     * 返回给response
+     *
      * @param code
-     * @param msg
+     * @param total
+     * @param data
      */
-    public void init(int code,String msg,int total,List<Object> data){
-        metaData.put("code",code);
-        metaData.put("msg",msg);
-        metaData.put("total",total);
-        result.put("data",data);
-        result.put("meta",metaData);
+    public void init(int code, int total, List<Object> data) {
+        metaData.put("code", code);
+        metaData.put("msg", meta.getMsg(code));
+        metaData.put("total", total);
+        result.put("data", data);
+        result.put("meta", metaData);
     }
 
 }

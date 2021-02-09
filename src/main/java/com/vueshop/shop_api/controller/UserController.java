@@ -60,9 +60,9 @@ public class UserController {
                                               @RequestParam(value = "username", required = false) String username,
                                               @RequestParam(value = "password", required = false) String password,
                                               @RequestParam(value = "email", required = false) String email,
-                                              @RequestParam(value = "address", required = false) String address,
-                                              @RequestParam(value = "phone", required = false) String phone,
-                                              @RequestParam(value = "money", required = false, defaultValue = "0") int money,
+                                           @RequestParam(value = "address", required = false,defaultValue = "无信息") String address,
+                                           @RequestParam(value = "phone", required = false,defaultValue = "无信息") String phone,
+                                           @RequestParam(value = "money", required = false, defaultValue = "0") int money,
                                               @RequestParam(value = "name", required = false) String name) {
         HashMap<String, Object> result = userService.addUser(username, password, email, address, phone, money, name);
         return responses.init(request, result);
@@ -102,26 +102,51 @@ public class UserController {
                                               @RequestParam(value = "username", required = false) String username,
                                               @RequestParam(value = "password", required = false) String password,
                                               @RequestParam(value = "email", required = false) String email,
-                                              @RequestParam(value = "address", required = false) String address,
-                                              @RequestParam(value = "phone", required = false) String phone,
+                                              @RequestParam(value = "address", required = false,defaultValue = "无信息") String address,
+                                              @RequestParam(value = "phone", required = false,defaultValue = "无信息") String phone,
                                               @RequestParam(value = "money", required = false, defaultValue = "0") int money,
                                               @RequestParam(value = "name", required = false) String name
     ) {
         HashMap<String, Object> result = userService.updateUser(id, username, password, email, address, phone, money, name);
         return responses.init(request, result);
     }
-//    @GetMapping("/user/selectUser")
-//    @ResponseBody
-//    public HashMap<String, Object> selectUser(HttpServletRequest request,
-//                                              @RequestParam(value = "id", required = false) int id,
-//                                              @RequestParam(value = "username", required = false) String username,
-//                                              @RequestParam(value = "password", required = false) String password,
-//                                              @RequestParam(value = "email", required = false) String email,
-//                                              @RequestParam(value = "address", required = false) String address,
-//                                              @RequestParam(value = "phone", required = false) String phone,
-//                                              @RequestParam(value = "money", required = false) int money,
-//                                              @RequestParam(value = "name", required = false) String name){
-//        HashMap<String ,Object> result = userService.selectAll(username,password,email,address,phone,money,name);
-//        return responses.init(request,result);
-//    }
+
+    /**
+     * 查询所有用户
+     * @param request
+     * @return hashMap
+     */
+    @GetMapping("/user/selectUser")
+    @ResponseBody
+    public HashMap<String, Object> selectUser(HttpServletRequest request,
+                                              @RequestParam(value = "page")int page,
+                                              @RequestParam(value = "pageSize")int pageSize){
+        HashMap<String ,Object> result = userService.selectAll(page-1,pageSize);
+        return responses.init(request,result);
+    }
+
+    /**
+     * 改变用户状态
+     * @param request
+     * @param id
+     * @param type
+     * @return response
+     */
+    @PostMapping("/user/changeType")
+    @ResponseBody
+    public HashMap<String ,Object> editType(HttpServletRequest request,
+                                            @RequestParam(value = "id") int id,
+                                            @RequestParam(value = "type")int type){
+        HashMap<String,Object> result = userService.changeType(id,type);
+        return responses.init(request,result);
+    }
+    @GetMapping("/user/selectName")
+    @ResponseBody
+    public HashMap<String,Object> selectUserName(HttpServletRequest httpServletRequest,
+                                                 @RequestParam(value = "name")String name,
+                                                 @RequestParam(value = "page")int page,
+                                                 @RequestParam(value = "pageSize")int PageSize){
+        HashMap<String,Object> result = userService.selectUserName(name,page-1,PageSize);
+        return responses.init(httpServletRequest,result);
+    }
 }

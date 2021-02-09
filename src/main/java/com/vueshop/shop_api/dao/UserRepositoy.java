@@ -1,8 +1,13 @@
 package com.vueshop.shop_api.dao;
 
 import com.vueshop.shop_api.entity.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+
+import java.util.List;
 
 public interface UserRepositoy<value> extends CrudRepository<User, Integer> {
     /**
@@ -29,6 +34,17 @@ public interface UserRepositoy<value> extends CrudRepository<User, Integer> {
     @Query(value = "select * from user where user_name =?1", nativeQuery = true)
     User selectByUserName(String username);
 
-//    @Query(value = "select * from user where user_name = ?1 and user_password = ?2 and email = ?3 and address = 4? and phone = ?5 and money = ?6 and name = ?7",nativeQuery = true)
-//    User findAll(String username, String password, String email, String address, String phone, int money, String name);
+    /**
+     * 查询所有用户信息
+     * @param page
+     * @return Page<user></user>
+     */
+    @Query(value = "select * from user",nativeQuery = true)
+    Page<User> selectAll(PageRequest page);
+
+    @Query(value = "update user set online = ?2 where id = ?1",nativeQuery = true)
+    void setUserOnline(int id,int type);
+
+    @Query(value = "select * from user where name = ?1",nativeQuery = true)
+    Page<User> selectUserName(String name, Pageable page);
 }

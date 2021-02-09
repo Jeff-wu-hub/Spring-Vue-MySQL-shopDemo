@@ -11,7 +11,7 @@ public class ShopApiApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ShopApiApplication.class, args);
-        System.out.printf("chen");
+        System.out.printf("Tomcat启动成功,启动端口号为8888");
     }
 
 }

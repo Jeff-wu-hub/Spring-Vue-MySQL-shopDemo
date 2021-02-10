@@ -94,7 +94,7 @@ public class Meta {
         msg.put(SUCCESS_ADD, "添加成功");
         msg.put(SUCCESS_UPDATE, "修改成功");
         msg.put(SUCCESS_SELECT, "查询信息成功");
-        msg.put(SUCCESS_DELETE, "删除失败");
+        msg.put(SUCCESS_DELETE, "删除成功");
         msg.put(ERROR_SELECT, "没有数据");
         msg.put(ERROR_UPDATE, "修改失败");
         msg.put(ERROR_DELETE, "删除失败");

@@ -7,6 +7,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 public interface UserRepositoy<value> extends CrudRepository<User, Integer> {
@@ -16,7 +17,7 @@ public interface UserRepositoy<value> extends CrudRepository<User, Integer> {
      * @param username
      * @return String
      */
-    @Query(value = "select user_password from user where user_name = ?1", nativeQuery = true)
+    @Query(value = "select password from user where username = ?1", nativeQuery = true)
     String find(String username);
     /**
      * 通过id查询数据库
@@ -31,7 +32,7 @@ public interface UserRepositoy<value> extends CrudRepository<User, Integer> {
      * @param username
      * @return user
      */
-    @Query(value = "select * from user where user_name =?1", nativeQuery = true)
+    @Query(value = "select * from user where username =?1", nativeQuery = true)
     User selectByUserName(String username);
 
     /**
@@ -42,9 +43,12 @@ public interface UserRepositoy<value> extends CrudRepository<User, Integer> {
     @Query(value = "select * from user",nativeQuery = true)
     Page<User> selectAll(PageRequest page);
 
-    @Query(value = "update user set online = ?2 where id = ?1",nativeQuery = true)
-    void setUserOnline(int id,int type);
-
+    /**
+     * 通过ysername查询所有信息
+     * @param name
+     * @param page
+     * @return
+     */
     @Query(value = "select * from user where name = ?1",nativeQuery = true)
     Page<User> selectUserName(String name, Pageable page);
 }

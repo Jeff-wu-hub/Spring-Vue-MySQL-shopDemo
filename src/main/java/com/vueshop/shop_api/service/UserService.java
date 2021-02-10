@@ -7,8 +7,10 @@ import com.vueshop.utils.Responses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -44,7 +46,7 @@ public class UserService {
         }
         if (password.equals(userRepositoy.find(username))) {//比对数据
             tempData = userRepositoy.selectByUserName(username);
-            init(SUCCESS,null );
+            initLogin(SUCCESS,tempData);
             return result;
         } else {
             init(ERROR ,null);
@@ -60,11 +62,11 @@ public class UserService {
      * @param
      * @return
      */
-    public HashMap<String, Object> addUser(String username, String password, String email, String address, String phone, int money, String name) {
+    public HashMap<String, Object> addUser(String username, String password, String email, String address, String phone, int money, String name ) {
         if (userRepositoy.selectByUserName(username) == null) { //用户名不存在增加信息
             User user = new User();
-            user.setUser_name(username);
-            user.setUser_password(password);
+            user.setUsername(username);
+            user.setPassword(password);
             user.setEmail(email);
             user.setAddress(address);
             user.setPhone(phone);
@@ -111,16 +113,18 @@ public class UserService {
      */
     public HashMap<String, Object> updateUser(int id, String username, String password, String email, String address, String phone, int money, String name) {
         tempData = userRepositoy.selectByUserName(username);
-        User user = new User();
+        User time = userRepositoy.selectById(id);
         if (tempData == null) { //如果用户名不重复
+            User user = new User();
             user.setId(id);
-            user.setUser_name(username);
-            user.setUser_password(password);
+            user.setUsername(username);
+            user.setPassword(password);
             user.setEmail(email);
             user.setAddress(address);
             user.setPhone(phone);
             user.setMoney(money);
             user.setName(name);
+            user.setCreate_time(time.create_time);
             userRepositoy.save(user);
             init(SUCCESS_UPDATE, null);
             return result;
@@ -146,20 +150,56 @@ public class UserService {
      * @param type
      * @return result
      */
-    public HashMap<String,Object> changeType(int id, int type){
-        tempData = userRepositoy.selectById(id);
-        User user = new User();
-        if(tempData == null){
+    public HashMap<String,Object> changeType(int id, boolean type){
+        User userInfo = userRepositoy.selectById(id);
+        if(userInfo == null){
             init(ERROR_UPDATE_USER_TYPE,null);
             return result;
         }else{
-            user.setUserOnline(id,type);
+            User user = new User();
+            user.setId(id);
+            user.setOnline(type);
+            user.setUsername(userInfo.getUsername());
+            user.setPassword(userInfo.getPassword());
+            user.setEmail(userInfo.getEmail());
+            user.setAddress(userInfo.getAddress());
+            user.setCreate_time(userInfo.create_time);
+            user.setPhone(userInfo.getPhone());
+            user.setMoney(userInfo.getMoney());
+            user.setName(userInfo.getName());
             userRepositoy.save(user);
             init(SUCCESS_UPDATE_USER_TYPE,null);
         }
         return result;
     }
-
+    /**
+     * 改变用户状态
+     * @param id
+     * @param money
+     * @return result
+     */
+    public HashMap<String,Object> changeMoney(int id, int money){
+        User userInfo = userRepositoy.selectById(id);
+        if(userInfo == null){
+            init(ERROR_UPDATE_USER_TYPE,null);
+            return result;
+        }else{
+            User user = new User();
+            user.setId(id);
+            user.setOnline(user.getOnline());
+            user.setUsername(userInfo.getUsername());
+            user.setPassword(userInfo.getPassword());
+            user.setEmail(userInfo.getEmail());
+            user.setAddress(userInfo.getAddress());
+            user.setCreate_time(userInfo.create_time);
+            user.setPhone(userInfo.getPhone());
+            user.setMoney(money);
+            user.setName(userInfo.getName());
+            userRepositoy.save(user);
+            init(SUCCESS_UPDATE_USER_TYPE,null);
+        }
+        return result;
+    }
     /**
      * 查询用户名字
      * @param name
@@ -187,6 +227,11 @@ public class UserService {
         result.put("data", data);
         result.put("meta", metaData);
     }
-
+    public void initLogin(int code,User data){
+        metaData.put("code", code);
+        metaData.put("msg", meta.getMsg(code));
+        result.put("data", data);
+        result.put("meta", metaData);
+    }
 
 }

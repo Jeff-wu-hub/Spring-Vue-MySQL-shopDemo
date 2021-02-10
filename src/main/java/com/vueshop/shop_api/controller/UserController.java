@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
+import java.security.Timestamp;
 import java.util.HashMap;
 
 
@@ -136,15 +137,31 @@ public class UserController {
     @ResponseBody
     public HashMap<String ,Object> editType(HttpServletRequest request,
                                             @RequestParam(value = "id") int id,
-                                            @RequestParam(value = "type")int type){
+                                            @RequestParam(value = "type")boolean type){
         HashMap<String,Object> result = userService.changeType(id,type);
+        return responses.init(request,result);
+    }
+
+    /**
+     * 改变金钱
+     * @param request
+     * @param id
+     * @param money
+     * @return
+     */
+    @PostMapping("/user/changeMoney")
+    @ResponseBody
+    public HashMap<String ,Object> editType(HttpServletRequest request,
+                                            @RequestParam(value = "id") int id,
+                                            @RequestParam(value = "money")int money){
+        HashMap<String,Object> result = userService.changeMoney(id,money);
         return responses.init(request,result);
     }
     @GetMapping("/user/selectName")
     @ResponseBody
     public HashMap<String,Object> selectUserName(HttpServletRequest httpServletRequest,
-                                                 @RequestParam(value = "name")String name,
-                                                 @RequestParam(value = "page")int page,
+                                                 @RequestParam(value = "name",required = false)String name,
+                                                 @RequestParam(value = "page" )int page,
                                                  @RequestParam(value = "pageSize")int PageSize){
         HashMap<String,Object> result = userService.selectUserName(name,page-1,PageSize);
         return responses.init(httpServletRequest,result);

@@ -33,7 +33,7 @@ module.exports = {
     },
 	proxy: {
 	    '/api': {
-	        target: "http://192.168.0.21:8888/",
+	        target: "http://192.168.0.110:8888/",
 	        changeOrigin: true,
 	        secure: false,
 	        pathRewrite: {
@@ -43,8 +43,6 @@ module.exports = {
 	},
   },
   configureWebpack: {
-    // provide the app's title in webpack's name field, so that
-    // it can be accessed in index.html to inject the correct title.
     name: name,
     resolve: {
       alias: {
@@ -57,8 +55,6 @@ module.exports = {
     config.plugin('preload').tap(() => [
       {
         rel: 'preload',
-        // to ignore runtime.js
-        // https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/cli-service/lib/config/app.js#L171
         fileBlacklist: [/\.map$/, /hot-update\.js$/, /runtime\..*\.js$/],
         include: 'initial'
       }
@@ -108,7 +104,7 @@ module.exports = {
                 elementUI: {
                   name: 'chunk-elementUI', // split elementUI into a single package
                   priority: 20, // the weight needs to be larger than libs and app or it will be packaged into libs or app
-                  test: /[\\/]node_modules[\\/]_?element-ui(.*)/ // in order to adapt to cnpm
+                  test: /[\\/]node_modules[\\/]_?element-ui(.*)/
                 },
                 commons: {
                   name: 'chunk-commons',

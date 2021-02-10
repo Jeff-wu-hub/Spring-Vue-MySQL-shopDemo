@@ -17,6 +17,7 @@
   </div>
 </template>
 <script>
+import {login} from '@/api/user'
 export default {
   name: "index",
   data(){
@@ -44,16 +45,26 @@ export default {
         dom.style.borderColor = '#7b838c'
       }
     },
-      login(){
+    /**
+     * 登陆功能
+     * @returns 状态
+     */
+     async login(){
        if(this.form.username === ''||this.form.password===''){
          this.dom.forEach(item=>{
            this.changeColor(item,'error')
          })
          this.$message.error('账号或密码不能为空')
        }else{
-        this.$store.dispatch('user/logIn',this.form).then(()=>{
-          this.$router.push('/')
-        })
+       const res = await login(this.form)
+          if(res.meta.code === 10&&res.data.online){
+            this.$message.success(`欢迎\n${res.data.name}`)
+            sessionStorage.setItem('login','success')
+            return  this.$router.push('/')
+          }else if(!res.data.online) {
+             return this.$message.error('没有权限')
+          }
+         this.$message.error(res.meta.msg)
        }
 
     }

@@ -39,12 +39,29 @@ export const constantRoutes = [
       name: 'userInfo',
       component: () => import('@/views/userInfo/userList/index'),
       meta: { title: '用户管理'}
+    },]
+  },
+  {
+    path: '/goods',
+    component: Layout,
+    meta: { title: '商品管理', icon: 'goods' },
+    children: [{
+      path: 'goodsList',
+      name: 'goodsList',
+      component: () => import('@/views/goods/goodsList/index'),
+      meta: { title: '商品列表'}
     },{
-      path: 'levelConfig',
-      name: 'levelConfig',
-      component: () => import('@/views/userInfo/levelConfig/index'),
-      meta: { title: '等级管理'}
-    }]
+      path: 'goodstype',
+      name: 'goodstype',
+      component: () => import('@/views/goods/goodstype/index'),
+      meta: { title: '商品分类'}
+    },{
+      path: 'categories',
+      name: 'categories',
+      component: () => import('@/views/goods/categories/index'),
+      meta: { title: '分类参数'}
+    },
+    ]
   },
 
   // 404 page must be placed at the end !!!
@@ -63,7 +80,7 @@ router.beforeEach( (to,from,next)=>{
     next()
     return NProgress.done()
   }else{
-    if(!store.getters.userInfo.online){
+    if(!sessionStorage.getItem('login')){
       next({path:'/login'})
       return NProgress.done()
     }

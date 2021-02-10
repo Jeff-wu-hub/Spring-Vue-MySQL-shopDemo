@@ -1,43 +1,44 @@
 <template>
-<div class="main">
-  <div class="leftFunction">
-    <el-button type="success" icon="el-icon-plus" @click="dialogVisible = !dialogVisible">添加用户</el-button>
-    <el-input v-model="input" placeholder="用户名/账号" class="input"></el-input>
-    <el-button icon="el-icon-search" />
-  </div>
-  <div class="rightFunction">
-    <el-button type="info" icon="el-icon-download">导出</el-button>
-  </div>
-  <el-dialog
-      title="添加用户"
-      :visible.sync="dialogVisible"
-      width="30%"
-      :before-close="close"
-      >
-    <el-form size="mini" ref="form" :model="form" label-width="100px" :rules="rules" label-position="right" hide-required-asterisk status-icon>
-      <el-form-item prop="user" label="用户名称"><el-input v-model="form.user" placeholder="输入用户名字" size="medium" style="width: 95%" /></el-form-item>
-      <el-form-item prop="username" label='用户账号'><el-input v-model="form.username" placeholder="用户账号" size="medium" style="width: 95%" /></el-form-item>
-      <el-form-item prop="password" label="用户密码"><el-input v-model="form.password" placeholder="用户密码" size="medium" style="width: 95%" /></el-form-item>
-      <el-form-item prop="phone" label="电话"><el-input v-model="form.phone" placeholder="电话号码" size="medium" style="width: 95%" /></el-form-item>
-      <el-form-item prop="address" label="地址"><el-input v-model="form.address" placeholder="地址" size='medium' style="width: 95%" /></el-form-item>
-      <el-form-item prop="email" label="电子邮箱"><el-input v-model="form.email" placeholder="电子邮箱" size='medium' style="width: 95%" /></el-form-item>
-      <el-form-item prop="money" label="充值金额"><el-input v-model="form.money" placeholder="充值金额" size='medium' style="width: 95%" /></el-form-item>
+  <div class="main">
+    <div class="leftFunction">
+      <el-button type="success" icon="el-icon-plus" @click="dialogVisible = !dialogVisible">添加用户</el-button>
+      <el-input v-model="input" placeholder="用户名" class="input"/>
+      <el-button icon="el-icon-search" @click="select"></el-button>
+    </div>
+    <div class="rightFunction">
+      <el-button type="info" icon="el-icon-download">导出</el-button>
+    </div>
+    <el-dialog
+        title="添加用户"
+        :visible.sync="dialogVisible"
+        width="30%"
+        :before-close="close"
+    >
+      <el-form size="mini" ref="form" :model="form" label-width="100px" :rules="rules" label-position="right"  status-icon>
+        <el-form-item prop="name" label="用户名称"><el-input v-model="form.name" placeholder="输入用户名字" size="medium" style="width: 95%" /></el-form-item>
+        <el-form-item prop="username" label='用户账号'><el-input v-model="form.username" placeholder="用户账号" size="medium" style="width: 95%" /></el-form-item>
+        <el-form-item prop="password" label="用户密码"><el-input v-model="form.password" placeholder="用户密码" size="medium" style="width: 95%" /></el-form-item>
+        <el-form-item prop="phone" label="电话"><el-input v-model="form.phone" placeholder="电话号码" size="medium" style="width: 95%" /></el-form-item>
+        <el-form-item prop="address" label="地址"><el-input v-model="form.address" placeholder="地址" size='medium' style="width: 95%" /></el-form-item>
+        <el-form-item prop="email" label="电子邮箱"><el-input v-model="form.email" placeholder="电子邮箱" size='medium' style="width: 95%" /></el-form-item>
+        <el-form-item prop="money" label="充值金额"><el-input v-model="form.money" placeholder="充值金额" size='medium' style="width: 95%" /></el-form-item>
 
-    </el-form>
-    <span slot="footer" class="dialog-footer">
+      </el-form>
+      <span slot="footer" class="dialog-footer">
       <el-button type="primary" @click="confirm" size="mini">确 定</el-button>
       <el-button @click="reset" size="mini">重 置</el-button>
       <el-button @click="close" size="mini">取 消</el-button>
     </span>
-  </el-dialog>
-</div>
+    </el-dialog>
+  </div>
 </template>
 
 <script>
 import { createUser } from '@/api/user'
 import NProgress from 'nprogress'
+
 export default {
-name: "funList",
+  name: "funList",
   data(){
     const emailREX = /^[0-9a-zA-Z_-](\w)+@[0-9a-zA-Z_-]+\.[a-z]{2,3}$/ //邮箱验
     const phoneREX = /^1+[3-9]+[0-9]{9}/ //电话号
@@ -49,7 +50,6 @@ name: "funList",
      * @param callback
      * @returns {*}
      */
-
     const emailTest = (rule,value,callback)=>{
       if(!emailREX.test(value)){
         return callback(new Error('邮箱地址不合法'))
@@ -84,40 +84,53 @@ name: "funList",
         return callback('密码只能为字母、数字、下划线')
       }
     }
-  return{
-    input:'',//输入框
-    dialogVisible:false,
-    form:{//添加用户表单
-      user:'',//用户名字
-      money:'',//充值金额
-    },
-    rules:{
-      user:{required:true,message:'请输入用户名称',trigger:'blur'},
-      username: {required: true,message: '请设置登陆账户',trigger: 'blur'},
-      password:[
-        {required:true,message: '密码不能为空'},
-        {validator:passwordTest,trigger: 'blur'}],
-      email:[
-        {required:true,message:'邮箱不能为空'},
-        {validator:emailTest,trigger:'blur'},
-      ],
-      phone:[
-        {required:true,message:'电话号码不能为空'},
-        {validator:phoneTest,trigger:'blur'}
-      ]
+    return{
+      input:'',//输入框
+      dialogVisible:false,
+      form:{},//添加用户表单
+      rules:{
+        name:{required:true,message:'请输入用户名称',trigger:'blur'},
+        username: {required: true,message: '请设置登陆账户',trigger: 'blur'},
+        password:[
+          {required:true,message: '密码不能为空'},
+          {validator:passwordTest,trigger: 'blur'}],
+        email:[
+          {required:true,message:'邮箱不能为空'},
+          {validator:emailTest,trigger:'blur'},
+        ],
+        phone:[
+          {required:true,message:'电话号码不能为空'},
+          {validator:phoneTest,trigger:'blur'}
+        ]
+      }
     }
-  }
   },
   methods:{
-   async confirm(){
-     NProgress.start()//提交进度条开始
+    /**
+     *
+     * 确认按钮 */
+    async confirm(){
+      NProgress.start()//提交进度条开始
       this.$refs.form.validate()
       const res = await createUser(this.form)
-      if(res.code === 200){
-         location.reload()
-         this.dialogVisible = false
-         NProgress.done()//提交进度条结束
+      if(res.meta.code === 110){
+        this.$emit('reload')
+        this.dialogVisible = false
+        NProgress.done()//提交进度条结束
+        return this.$message.success(res.meta.msg)
+      }else{
+        NProgress.done()//提交进度条结束
+        return this.$message.error(res.meta.msg)
       }
+    },
+    /**
+     * 查询信息回调
+     * */
+     select(){
+      this.$emit('select',this.input)
+    },
+    select1(){
+      console.log(1)
     },
     /**
      * 关闭按钮

@@ -4,13 +4,13 @@ import { Message } from 'element-ui'
 const service = axios.create({
   baseURL: '/api', // url = base url + request url
   // withCredentials: true, // send cookies when cross-domain requests
+  headers:{'Content-type':'application/json'},
   timeout: 5000 // request timeout
 })
 
 // request interceptor
 service.interceptors.request.use(
   config => {
-
     return config
   },
   error => {

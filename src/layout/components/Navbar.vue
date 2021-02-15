@@ -42,7 +42,7 @@ export default {
   },
   data(){
     return {
-      avenger:''
+      avenger:require('@/assets/logo/gouwuche.png')
   }
   },
   computed: {

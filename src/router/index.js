@@ -44,7 +44,7 @@ export const constantRoutes = [
   {
     path: '/goods',
     component: Layout,
-    meta: { title: '商品管理', icon: 'goods' },
+    meta: { title: '商品管理', icon: 'tree' },
     children: [{
       path: 'goodsList',
       name: 'goodsList',

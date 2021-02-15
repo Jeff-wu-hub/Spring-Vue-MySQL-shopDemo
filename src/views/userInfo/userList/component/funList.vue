@@ -114,6 +114,7 @@ export default {
       this.$refs.form.validate()
       const res = await createUser(this.form)
       if(res.meta.code === 110){
+        this.$refs.form.
         this.$emit('reload')
         this.dialogVisible = false
         NProgress.done()//提交进度条结束

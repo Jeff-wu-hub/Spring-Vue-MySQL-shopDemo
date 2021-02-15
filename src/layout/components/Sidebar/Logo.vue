@@ -1,7 +1,7 @@
 <!--
- * @Descripttion: 
+ * @Descripttion:
  * @Author: 吴广帅
- * @version: 
+ * @version:
  * @Date: 2021-01-30 19:43:01
  * @LastEditors: 吴广帅
  * @LastEditTime: 2021-01-30 21:02:00
@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       title: 'Vue Shop',
-      logo: '@/assets/404_cloud.png'
+      logo: require('@/assets/logo/gouwuche.png')
     }
   }
 }
@@ -66,7 +66,7 @@ export default {
       width: 32px;
       height: 32px;
       vertical-align: middle;
-      margin-right: 12px;
+      margin-right: 10px;
     }
 
     & .sidebar-title {

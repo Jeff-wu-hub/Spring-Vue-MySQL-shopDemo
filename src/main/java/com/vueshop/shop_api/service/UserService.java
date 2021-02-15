@@ -114,7 +114,6 @@ public class UserService {
     public HashMap<String, Object> updateUser(int id, String username, String password, String email, String address, String phone, int money, String name) {
         tempData = userRepositoy.selectByUserName(username);
         User time = userRepositoy.selectById(id);
-        if (tempData == null) { //如果用户名不重复
             User user = new User();
             user.setId(id);
             user.setUsername(username);
@@ -128,10 +127,6 @@ public class UserService {
             userRepositoy.save(user);
             init(SUCCESS_UPDATE, null);
             return result;
-        }else{
-            init(ERROR_UPDATE, null);
-            return result;
-        }
     }
 
     /**

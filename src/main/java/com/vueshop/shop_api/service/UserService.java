@@ -23,8 +23,6 @@ public class UserService {
     @Autowired
     UserRepositoy userRepositoy;
     @Autowired
-    Responses responses;
-    @Autowired
     Meta meta;
     HashMap<String, Object> result = new HashMap<>(); //定义数据库查询数据
     HashMap<String, Object> metaData = new HashMap<>(); //定义meta状态

@@ -21,8 +21,6 @@ public class UserController {
     UserService userService;
     @Autowired
     Responses responses;
-    @Autowired
-    UserRepositoy userRepositoy;
 
 
     /**

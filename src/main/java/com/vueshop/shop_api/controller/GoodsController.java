@@ -1,7 +1,7 @@
 package com.vueshop.shop_api.controller;
 
 import com.vueshop.shop_api.dao.GoodsRepositoy;
-import com.vueshop.shop_api.entity.Goods;
+import com.vueshop.shop_api.entity.GoodsCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -23,7 +23,7 @@ public class GoodsController {
 
     @PostMapping(value = "/postgoods")//,produces = "application/json")
     @ResponseBody
-    public String postGoods(Goods goods){
+    public String postGoods(GoodsCategory goods){
         goodsRepositoy.save(goods);
         return "成功";
     }

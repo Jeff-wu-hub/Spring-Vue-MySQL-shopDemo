@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f35c81c3-9125-4f44-9ddc-1831b2afc0e9" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/GoodsCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/dao/GoodsCategoryRepositoy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/entity/GoodsCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/GoodsCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0585ea21-80e8-4b5a-b5f0-7f9b6331f4bc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0585ea21-80e8-4b5a-b5f0-7f9b6331f4bc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/dao/GoodsRepositoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/dao/GoodsRepositoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/GoodsCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/GoodsCategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +95,7 @@
       <updated>1612892162150</updated>
       <workItem from="1612892166814" duration="24590000" />
       <workItem from="1613371388013" duration="6613000" />
+      <workItem from="1613898278500" duration="815000" />
     </task>
     <task id="LOCAL-00002" summary="【开发】&#10;&lt;2021-2-10&gt;&#10;上传后端代码">
       <created>1612957780855</created>
@@ -125,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613374359038</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="上传商品管理初始化代码">
+      <created>1613898324891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613898324891</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +148,8 @@
     <MESSAGE value="【开发】&#10;&lt;2021-2-10&gt;&#10;上传后端代码" />
     <MESSAGE value="【开发】&#10;&lt;2021-2-10&gt;&#10;上传MD文档" />
     <MESSAGE value="删除原有entity文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除原有entity文件" />
+    <MESSAGE value="上传商品管理初始化代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传商品管理初始化代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612863752444">
@@ -239,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612946696443" />
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1613374361438">
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1613898327448">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613374361438" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613898327448" />
     <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1612946729093">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

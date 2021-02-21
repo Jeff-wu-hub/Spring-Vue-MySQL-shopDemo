@@ -22,7 +22,7 @@ public class GoodsCategoryService {
 
     public HashMap<String ,Object> selectAll(){
         List<HashMap<String,Object>> data = goodsCategoryRepositoy.selectAll();
-        init(meta.SUCCESS_SELECT,data);7
+        init(meta.SUCCESS_SELECT,data);
         return result;
     }
 

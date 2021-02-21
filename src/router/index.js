@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import store from "@/store";
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 NProgress.configure({showSpinner: false})
@@ -88,7 +87,6 @@ router.beforeEach( (to,from,next)=>{
   NProgress.done()
   next()
 })
-// Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {
   const newRouter = createRouter()
   router.matcher = newRouter.matcher // reset router

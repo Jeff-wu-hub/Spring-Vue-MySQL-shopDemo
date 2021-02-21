@@ -68,7 +68,8 @@
 </template>
 
 <script>
-import NProgress from "_nprogress@0.2.0@nprogress";
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 import {deleteUser,updateUser,changeType,updateMoney} from "@/api/user";
 
 export default {
@@ -222,7 +223,6 @@ export default {
         id:obj.id,
         type:type
       })
-      console.log(res)
     },
     /**
      * 关闭修改信息对话框

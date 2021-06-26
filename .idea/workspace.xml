@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f35c81c3-9125-4f44-9ddc-1831b2afc0e9" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/GoodsCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vueshop/shop_api/service/GoodsCategoryService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oFpOZQEpJ98k91Dzbl0q59Vm2T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="更新" />
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="debugger.stepping" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.vueshop.shop_api.entity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="vue_shop" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Java缓存" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vueshop.ShopApiApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="【开发】&#10;&lt;2021-2-9&gt;&#10;完成用户功能，并上传接口文档">
+      <created>1612884995993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612884995993</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f35c81c3-9125-4f44-9ddc-1831b2afc0e9" name="默认的" comment="" />
+      <created>1612892162150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612892162150</updated>
+      <workItem from="1612892166814" duration="24590000" />
+      <workItem from="1613371388013" duration="6613000" />
+      <workItem from="1613898278500" duration="815000" />
+    </task>
+    <task id="LOCAL-00002" summary="【开发】&#10;&lt;2021-2-10&gt;&#10;上传后端代码">
+      <created>1612957780855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612957780855</updated>
+    </task>
+    <task id="LOCAL-00003" summary="【开发】&#10;&lt;2021-2-10&gt;&#10;上传MD文档">
+      <created>1612957889344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612957889344</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除原有entity文件">
+      <created>1613374359037</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613374359038</updated>
+    </task>
+    <task id="LOCAL-00005" summary="上传商品管理初始化代码">
+      <created>1613898324891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613898324891</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="【开发】&#10;&lt;2021-2-9&gt;&#10;完成用户功能，并上传接口文档" />
+    <MESSAGE value="【开发】&#10;&lt;2021-2-10&gt;&#10;上传后端代码" />
+    <MESSAGE value="【开发】&#10;&lt;2021-2-10&gt;&#10;上传MD文档" />
+    <MESSAGE value="删除原有entity文件" />
+    <MESSAGE value="上传商品管理初始化代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传商品管理初始化代码" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612863752444">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612863752444" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1612956816125">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612956816125" />
+    <state x="689" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1612863015321">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="689" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612863015321" />
+    <state x="637" y="79" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613374717328">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="637" y="79" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613374717328" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613371732476">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613371732476" />
+    <state x="690" y="271" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1612956993345">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612956993345" />
+    <state x="859" y="414" width="713" height="242" key="#分配数据源" timestamp="1612952864432">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="859" y="414" width="713" height="242" key="#分配数据源/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612952864432" />
+    <state width="1877" height="250" key="GridCell.Tab.0.bottom" timestamp="1613418504644">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613418504644" />
+    <state width="1877" height="250" key="GridCell.Tab.0.center" timestamp="1613418504644">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613418504644" />
+    <state width="1877" height="250" key="GridCell.Tab.0.left" timestamp="1613418504644">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613418504644" />
+    <state width="1877" height="250" key="GridCell.Tab.0.right" timestamp="1613418504644">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613418504644" />
+    <state width="1877" height="250" key="GridCell.Tab.1.bottom" timestamp="1613418504645">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613418504645" />
+    <state width="1877" height="250" key="GridCell.Tab.1.center" timestamp="1613418504644">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613418504644" />
+    <state width="1877" height="250" key="GridCell.Tab.1.left" timestamp="1613418504644">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613418504644" />
+    <state width="1877" height="250" key="GridCell.Tab.1.right" timestamp="1613418504644">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613418504644" />
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom" timestamp="1612960603554">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612960603554" />
+    <state width="1877" height="378" key="GridCell.Tab.2.center" timestamp="1612960603554">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612960603554" />
+    <state width="1877" height="378" key="GridCell.Tab.2.left" timestamp="1612960603554">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612960603554" />
+    <state width="1877" height="378" key="GridCell.Tab.2.right" timestamp="1612960603554">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612960603554" />
+    <state width="283" height="477" key="HiddenNamespacesPopup" timestamp="1613373822739">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="283" height="477" key="HiddenNamespacesPopup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613373822739" />
+    <state x="540" y="268" key="IDE.errors.dialog" timestamp="1612938503006">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="540" y="268" key="IDE.errors.dialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612938503006" />
+    <state x="461" y="169" key="SettingsEditor" timestamp="1612946696443">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612946696443" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1613898327448">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613898327448" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1612946729093">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612946729093" />
+    <state x="803" y="296" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1613374774490">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="803" y="296" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613374774490" />
+    <state x="-7" y="0" width="974" height="1057" key="dock-window-1" timestamp="1612894054773">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-7" y="0" width="974" height="1057" key="dock-window-1/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612894054773" />
+    <state x="661" y="281" key="refactoring.ChangeSignatureDialog" timestamp="1612877358419">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="661" y="281" key="refactoring.ChangeSignatureDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1612877358419" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1613375574362">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1613375574362" />
+  </component>
+</project>

@@ -1,0 +1,16 @@
+spring:
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效
+    jpa:
+      properties:
+        hibernate:
+          hbm2ddl:
+            auto: create
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+          format_sql: true
+      show-sql: true
